@@ -1,0 +1,440 @@
+/* FONT */
+@font-face {
+    font-family: 'Morph';
+    src: url('../font/MORPHEUS.TTF');
+}
+@font-face {
+    font-family: 'arialn';
+    src: url('../font/arialn.ttf');
+}
+@font-face {
+    font-family: 'Friz';
+    src: url('../font/FRIZQT__.TTF');
+}
+
+/*BODY et TITRE*/
+*{
+    margin:0;
+    padding:0;
+    cursor: url(../images/cursor.cur), default;
+}
+
+body{
+    font-family:Arial;
+    background:#fff url(../images/fond.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#titre{
+    width:548px;
+    height:250px;
+    position:relative;
+    top:650px;
+    left:150px;
+    background:transparent url(../titre2.png) no-repeat top left;
+}
+#content{
+    margin:0 auto;
+}
+
+a.menu{
+    font-family: Morph;
+    position:absolute;
+    width:147px;
+    height:52px;
+    color: #cc9900;
+    font-size:18px;
+    top:0px;
+    left:0px;
+    text-indent:10px;
+    line-height:52px;
+    text-shadow:1px 1px 1px #232323;
+    text-transform:uppercase;
+    text-decoration: none;
+
+}
+a.menu:hover{
+    color: #d6a94d;
+    text-shadow:1px 1px 5px rgba(16, 59, 170, 0.89);
+}
+
+a:hover{
+    cursor: url(../images/cursorLink.cur), pointer;
+}
+button:hover{
+    cursor: url(../images/cursorLink.cur), pointer;
+}
+
+.navigation{
+    top: 0px;
+    left: 0px;
+    margin: 0px auto;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+}
+
+.navigation .item{
+    position:absolute;
+}
+.score{
+    top:200px;
+    left:110px;
+}
+.regle{
+    top:150px;
+    left:360px;
+}
+.easy{
+    top:200px;
+    left:625px;
+}
+.medium{
+    top:340px;
+    left:835px;
+}
+.hard{
+    top:550px;
+    left:950px;
+}
+a.icon{
+    width:52px;
+    height:52px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    cursor: url(../images/cursorLink.cur), pointer;
+}
+
+/* MENU */
+.score a.icon{
+    background:transparent url(../images/user.png) no-repeat 0px 0px;
+    -webkit-box-shadow: 0px 0px 95px -12px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 95px -12px rgba(255,255,255,1);
+    box-shadow: 0px 0px 95px -12px rgba(255,255,255,1);
+    -moz-border-radius: 9999999px;
+    -webkit-border-radius: 9999999px;
+    border-radius: 9999999px;
+}
+.regle a.icon{
+    background:transparent url(../images/home.png) no-repeat 0px 0px;
+    -webkit-box-shadow: 0px 0px 95px -12px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 95px -12px rgba(255,255,255,1);
+    box-shadow: 0px 0px 95px -12px rgba(255,255,255,1);
+    -moz-border-radius: 9999999px;
+    -webkit-border-radius: 9999999px;
+    border-radius: 9999999px;
+}
+.easy a.icon{
+    background:transparent url(../images/Alliance/easy_alliance.png) no-repeat 0px 0px;
+}
+.medium a.icon{
+    background:transparent url(../images/Alliance/medium_alliance.png) no-repeat 0px 0px;
+
+}
+.hard a.icon{
+    background:transparent url(../images/Alliance/hard_alliance.png) no-repeat 0px 0px;
+
+}
+
+.navigation .item a.active{
+    background-position:0px -52px;
+}
+
+.item img.circle{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:52px;
+    height:52px;
+    opacity:0.1;
+}
+.item h2{
+    font-family: Morph;
+    position:absolute;
+    width:147px;
+    height:52px;
+    color: #cc9900;
+    font-size:18px;
+    top:0px;
+    left:52px;
+    text-indent:10px;
+    line-height:52px;
+    text-shadow:1px 1px 1px #232323;
+    text-transform:uppercase;
+}
+
+.item h2.active{
+    color: #d6a94d;
+    text-shadow:1px 1px 5px rgba(16, 59, 170, 0.89);
+}
+
+.item ul{
+    list-style:none;
+    position:absolute;
+    top:60px;
+    left:43px;
+    display:none;
+}
+.item ul li a{
+    font-size:15px;
+    text-decoration:none;
+    letter-spacing:1.5px;
+    color: #ffc124;
+    text-shadow: #000000 1px 1px 5px, #000000 -1px 1px 5px, #000000 -1px -1px 5px, #000000 1px -1px 5px;
+    padding:5px;
+    float:left;
+    clear:both;
+    width:100px;
+    height: 45px;
+    text-align: center;
+}
+
+li.start{
+    width: 170px;
+    height: 50px;
+    background-image: url(../images/start_up.png);
+    background-size: 170px;
+    background-repeat: no-repeat;
+    font-family: Friz;
+
+}
+li.start:active{
+    background-image: url(../images/start_down.png);
+    color: #ab8216;
+}
+li.start:active a{
+    margin-top: 2px;
+}
+
+
+/* THEME */
+div.theme{
+    width:548px;
+    height:250px;
+    position:absolute;
+    top:400px;
+    left:375px;
+}
+button{
+    background: none;
+    border:none;
+    margin-right: 3%;
+}
+
+.faction{
+    top: 74px;
+    left: 1200px;
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    background: url(../images/Alliance/faction.png) no-repeat;
+    background-size: 200px 250px;
+}
+
+img.theme:hover{
+    cursor: url(../images/theme.cur), alias;
+}
+
+#jeu{
+    visibility: hidden;
+}
+
+div#memory_board{
+    width:650px;
+    height:auto;
+    padding:24px;
+    margin:0px auto;
+    top:130px;
+    left: 70px;
+    position: absolute;
+}
+
+div#memory_board > div{
+    background-image: url("../images/dos_carte.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border:#000 1px solid;
+    width:100px;
+    height:100px;
+    float:left;
+    margin:10px;
+    padding:20px;
+    font-size:64px;
+    cursor:url(../images/Arch-Icon-Marker.png), alias;
+    text-align:center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+div#info_jeu{
+    background: url(../images/Alliance/info_jeu_a.png);
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 500px;
+    margin-left: 770px;
+    margin-top: -30px;
+}
+
+p#niveau{
+    font-family: Morph;
+    color: #cc9900;
+    padding-left: 180px;
+padding-top: 2px;
+}
+
+p#nom{
+    font-family: Friz;
+    color: #ffffff;
+    margin-left: 12px;
+    text-align: center;
+    margin-top: 11px;
+}
+button#rejouer{
+    color: #ffc124;
+    text-shadow: #000000 1px 1px 5px, #000000 -1px 1px 5px, #000000 -1px -1px 5px, #000000 1px -1px 5px;
+    font-family: Friz;
+    border: none;
+    margin-right: 3%;
+    height: 22px;
+    width: 78px;
+    background: url(../images/bouton_up.png);
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+button#rejouer:active, button#score_jeu:active{
+    background-image: url(../images/bouton_down.png);
+}
+
+button#score_jeu{
+    font-family: Friz;
+    color: #ffc124;
+    text-shadow: #000000 1px 1px 5px, #000000 -1px 1px 5px, #000000 -1px -1px 5px, #000000 1px -1px 5px;
+    border: none;
+    margin-right: 3%;
+    height: 22px;
+    width: 78px;
+    background: url(../images/bouton_up.png);
+    background-repeat: no-repeat;
+    margin-top: 302px;
+    margin-left: 152px;
+}
+
+p#coup{
+    font-family: Friz;
+    text-indent: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+div#chronotime{
+    font-family: Friz;
+    position: absolute;
+    font-size: 30px;
+    top: 450px;
+    left: 890px;
+}
+
+img#chrono{
+    position: absolute;
+    top: 439px;
+    left: 845px;
+}
+
+img#pdf{
+    position: absolute;
+    left: 780px;
+    top: 228px;
+    border-radius: 99999px;
+    height: 55px;
+}
+
+/* Carte */
+.flipCard{
+    transform: rotateY(180deg);
+    transition-duration: 0.2s;
+}
+
+
+/* Son */
+
+div#son{
+    position: absolute;
+    top: 95%;
+    left: 90%;
+}
+
+div#disabled{
+    visibility: hidden;
+    width:650px;
+    height:550px;
+    padding:24px;
+    margin:0px auto;
+    top:130px;
+    left: 70px;
+    position: absolute;
+}
+
+@keyframes apparition {
+    from{opacity: 100;}
+    to{opacity: 0;}
+}
+
+
+div#win{
+    visibility: hidden;
+    font-family: Friz;
+    background: url(../images/win.png);
+    width: 303px;
+    height: 84px;
+    position: absolute;
+    top: 800px;
+    left: 550px;
+    padding-top: 50px;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 11px;
+    padding-left: 100px;
+    animation-name: apparition;
+    animation-delay: 4s;
+}
+
+
+.winApparition{
+    -webkit-animation: win 0.5s linear forwards;
+}
+
+#rotate{
+    background-image: url(../images/pdf_rotate.png);
+    background-repeat: no-repeat;
+    -webkit-animation: rotation 20s linear infinite;
+    height: 120px;
+    width: 120px;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 195px;
+    left: 746px;
+}
+
+#rotate:hover{
+    cursor: url(../images/cursorLink.cur), alias;
+}
+
+
+@-webkit-keyframes rotation {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes win {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

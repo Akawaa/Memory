@@ -1,0 +1,137 @@
+/* FONT */
+@font-face {
+  font-family: 'Morph';
+  src: url('../../../../font/MORPHEUS.TTF');
+}
+@font-face {
+  font-family: 'arialn';
+  src: url('../../../../font/arialn.ttf');
+}
+@font-face {
+  font-family: 'Friz';
+  src: url('../../../../font/FRIZQT__.TTF');
+}
+
+li{
+  list-style: none;
+}
+h3{
+  text-decoration: underline;
+}
+
+.alertify .ajs-dialog {
+  background-image: url(../../../../images/alert_center.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: Friz;
+  margin-top: 10%;
+}
+.alertify .ajs-header {
+  color: #cc9900;
+  text-shadow:1px 1px 1px #d6a94d;
+  font-size: 20px;
+  font-family: Morph;
+  font-weight: bold;
+  background-image: url(../../../../images/alert_top.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 2px 2px 0 0;
+}
+
+.alertify .ajs-body {
+  color: #ffffff;
+}
+
+.ajs-input{
+  background:url(../../../../images/bg_input.png);
+  background-size: 100%;
+  background-repeat: repeat-x;
+  border-width:5px;
+  border-style:ridge;
+  border-color: #434343;
+  color: #ffffff;
+  font-family: Friz;
+  font-size: 16px;
+}
+
+
+.alertify .ajs-body .ajs-content .ajs-input {
+  display: block;
+  padding: 8px;
+  margin: 4px;
+  border-radius: 2px;
+  width: 80%;
+}
+.alertify .ajs-body .ajs-content p {
+  margin: 0;
+}
+.alertify .ajs-footer {
+  background-image: url(../../../../images/alert_buttom.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0 0 2px 2px;
+  padding-bottom: 3%;
+  padding-right: 3%;
+
+}
+.alertify .ajs-footer .ajs-buttons .ajs-button {
+  background-color: transparent;
+  border: 0;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Friz;
+  color: #ffc124;
+  text-shadow: #000000 1px 1px 5px, #000000 -1px 1px 5px, #000000 -1px -1px 5px, #000000 1px -1px 5px;
+}
+
+.ajs-button{
+  background-image: url(../../../../images/start_up.png);
+  background-size: 155% 130%;
+  background-repeat: no-repeat;
+}
+.ajs-button:active{
+  background-image: url(../../../../images/start_down.png);
+  background-size: 155% 130%;
+  background-repeat: no-repeat;
+}
+
+.alertify .ajs-footer .ajs-buttons .ajs-button.ajs-ok {
+  font-family: Friz;
+  color: #ffc124;
+  text-shadow: #000000 1px 1px 5px, #000000 -1px 1px 5px, #000000 -1px -1px 5px, #000000 1px -1px 5px;
+}
+.alertify-notifier .ajs-message {
+  background: rgba(255, 255, 255, 0.95);
+  color: #ffc124;
+  text-align: center;
+  border-radius: 2px;
+}
+.alertify-notifier .ajs-message.ajs-success {
+  font-family: Friz;
+  width: 310px;
+  height: 50px;
+  background: url(../../../../images/win.png);
+  background-repeat: no-repeat;
+  color: #ffffff;
+  font-size: 12px;
+  margin-left: -565px;
+  margin-top: -200px;
+  padding-top: 47px;
+}
+
+
+.alertify-notifier .ajs-message.ajs-error {
+  font-family: Friz;
+  margin-top: 100px;
+  width: 310px;
+  height: 50px;
+  background: url(../../../../images/error.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  color: #ffffff;
+  font-size: 12px;
+}
+.alertify-notifier .ajs-message.ajs-warning {
+  background: rgba(252, 248, 215, 0.95);
+  border-color: #999;
+}
